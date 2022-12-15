@@ -112,26 +112,6 @@ class PagesController extends Controller
         return view('Estudiante.pagActualizar', compact('xActAlumnos'));
     }
 
-    public function fnUpdate(Request $request, $id){
-
-        $xUpdateAlumnos = Estudiante::findOrFail($id);
-
-        $xUpdateAlumnos -> codEst = $request -> codEst;
-        $xUpdateAlumnos -> nomEst = $request -> nomEst;
-        $xUpdateAlumnos -> apeEst = $request -> apeEst;
-        $xUpdateAlumnos -> fnaEst = $request -> fnaEst;
-        $xUpdateAlumnos -> modMat = $request -> modMat;
-        $xUpdateAlumnos -> turMat = $request -> turMat;
-        $xUpdateAlumnos -> semMat = $request -> semMat;
-        $xUpdateAlumnos -> estMat = $request -> estMat;
-
-        $xUpdateAlumnos -> save();          //Guardando en BD
-
-        //$xAlumnos = Estudiante1::all();                   //Datos de BD
-        //return view('pagLista', compact('xAlumnos'));     //Equivalente
-        return back()->with('msj','Se actualizo con éxito...');        
-    }
-
     public function  fnEliminar($id) {
         $deleteAlumno = Estudiante::findOrFail($id);
         $deleteAlumno->delete();

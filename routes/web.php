@@ -10,7 +10,7 @@ Route::get('/listaCurso',[PagesController::class, 'fnListaCurso'] )->name('xList
 Route::get('/detalleCurso/{id}',[PagesController::class, 'fnDetalleCurso'] ) ->name('xDetalleCurso');
 
 Route::get('/actualizarCurso/{id}',[PagesController::class, 'fnActualizarCurso'] ) ->name('xActualizarCurso');
-Route::get('/actualizarCur/{id}',[PagesController::class, 'fnUpdateCurso'] ) ->name('xUpdateCurso');
+//Route::get('/actualizarCurso/{id}',[PagesController::class, 'fnUpdateCurso'] ) ->name('xUpdateCurso');
 
 Route::delete('/eliminarCurso/{id}',[PagesController::class, 'fnEliminarCurso'] ) ->name('xEliminarCurso');
 
@@ -30,7 +30,7 @@ Route::get('/detalle/{id}',[PagesController::class, 'fnEstDetalle'] ) ->name('Es
 Route::get('/galeria/{numero?}',[PagesController::class, 'fnGaleria'] ) ->  where('numero', '[0-9]+')->name('xGaleria');
 
 Route::get('/actualizar/{id}',[PagesController::class, 'fnEstActualizar'] ) ->name('Estudiante.xActualizar');
-Route::get('/actualizar/{id}',[PagesController::class, 'fnUpdate'] ) ->name('Estudiante.xUpdate');
+//Route::get('/actualizar/{id}',[PagesController::class, 'fnUpdate'] ) ->name('Estudiante.xUpdate');
 
 Route::delete('/eliminar/{id}',[PagesController::class, 'fnEliminar'] ) ->name('Estudiante.xEliminar');
 

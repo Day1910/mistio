@@ -60,8 +60,8 @@
         </select>
         <select name="estMat" class="form-control mb-1">
             <option value="">Seleccione...</option>
-            <option value="Inactivo">Inactivo</option>
-            <option value="Activo">Activo</option>
+            <option value="0">Inactivo</option>
+            <option value="1">Activo</option>
         </select>
 
         <button class="btn btn-info" type="submit"> AGREGAR</button>

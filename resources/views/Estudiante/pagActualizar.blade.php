@@ -15,9 +15,8 @@
     
     
     <form action = "{{route('Estudiante.xRegistrar')}}" method="post" class="d-grid gap-2">
-        
-        @method('PUT')
-        @csrf
+       
+    @csrf
 
         @error('codEst')
             <div class="alert alert-danger">
