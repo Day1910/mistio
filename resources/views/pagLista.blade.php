@@ -29,6 +29,11 @@
                 El nombre es requerido 
             </div>
         @enderror
+        @error('fnaEst')
+            <div class="alert alert-danger">
+                La fecha de nacimiento es requerida
+            </div>
+        @enderror
 
         @if(true)
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -55,8 +60,8 @@
         </select>
         <select name="estMat" class="form-control mb-1">
             <option value="">Seleccione...</option>
-            <option value="0">Inactivo</option>
-            <option value="1">Activo</option>
+            <option value="Inactivo">Inactivo</option>
+            <option value="Activo">Activo</option>
         </select>
 
         <button class="btn btn-info" type="submit"> AGREGAR</button>
