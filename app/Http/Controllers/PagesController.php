@@ -24,12 +24,12 @@ class PagesController extends Controller
         ]);
 
         $nuevoCurso = new Curso;
-        $nuevoCurso->codEst = $request->denCur;
-        $nuevoCurso->nomEst = $request->hrsCur;
-        $nuevoCurso->apeEst = $request->creCur;
-        $nuevoCurso->fnaEst = $request->plaCur;
-        $nuevoCurso->semMat = $request->tipCur;
-        $nuevoCurso->estMat = $request->estCur;
+        $nuevoCurso->denCur = $request->denCur;
+        $nuevoCurso->hrsCur = $request->hrsCur;
+        $nuevoCurso->creCur = $request->creCur;
+        $nuevoCurso->plaCur = $request->plaCur;
+        $nuevoCurso->tipCur = $request->tipCur;
+        $nuevoCurso->estCur = $request->estCur;
         
         $nuevoCurso->save();
         
