@@ -13,11 +13,10 @@
         </div>
     @endif
     
-    <div class="btn btn-success d-grid fs-5 mb-2">Registrar nuevo seguimiento...</div>
     
     <form action = "{{route('Estudiante.xRegistrar')}}" method="post" class="d-grid gap-2">
         
-       
+        @method('PUT')
         @csrf
 
         @error('codEst')
@@ -32,7 +31,7 @@
             </div>
         @enderror
 
-        @if(true)
+        @if($errors -> has('apeEst'))
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
                 El <strong>apellido</strong> es requerido 
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>

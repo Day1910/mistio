@@ -83,8 +83,7 @@
             <tr>
                 <th $cope="col">Id</th>
                 <th $cope="col">Denominación de curso</th>
-                <th $cope="col">Horas</th>
-                <th $cope="col">Créditos</th>
+                <th $cope="col">Tipo de estudios</th>
                 <th $cope="col">Editar</th>
             </tr>
         </thead>
@@ -95,7 +94,7 @@
             <td>{{ $item->denCur }}</td>
                 <td>
                     <a href="{{ route('xDetalleCurso', $item->id) }}">
-                        {{ $item->hrsCur }}, {{ $item->creCur }}
+                        {{ $item->tipCur }}
                     </a>
             </td>
             <td>

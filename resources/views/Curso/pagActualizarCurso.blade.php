@@ -46,8 +46,8 @@
         <input type="text" name="plaCur" placeholder="Plan de estudios" value="{{$xActCursos->plaCur}}" class="form-control mb-1">
         <select name="tipCur" class="form-control mb-1">
             <option value="">Seleccione...</option>
-            <option value="1">Transversal</option>
-            <option value="2">Especialidad</option>
+            <option value="Transversal">Transversal</option>
+            <option value="Especialidad">Especialidad</option>
         </select>
         <select name="estCur" class="form-control mb-1">
             <option value="">Seleccione...</option>
